@@ -1,6 +1,3 @@
-# nicla-waste-classification
-An AI-powered waste classification system using Nicla Vision and Edge Impulse.
-
 # Nicla Vision Waste Classification 
 
 This project uses **Edge Impulse** on **Nicla Vision** to classify waste as **Recyclable**, **Non-Recyclable**, and detect anomalies (trash on the ground). The system lights up different LEDs to indicate the classification.
