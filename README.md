@@ -27,6 +27,7 @@ Install the Edge Impulse Library
 	3.	Select the zipped nicla-waste-classification folder and import it.
 
 Run the Example Code
+
 	1.	In Arduino IDE, go to:
 	•	File ➝ Examples ➝ _lk_inferencing ➝ nicla_vision_camera.ino
 	2.	Open the file and upload it to the Nicla Vision board.
