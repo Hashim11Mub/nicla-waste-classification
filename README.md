@@ -1,31 +1,25 @@
-# Nicla Vision Waste Classification 
+![TinyML project overview](docs/project-cover.svg)
 
-This project uses **Edge Impulse** on **Nicla Vision** to classify waste as **Recyclable**, **Non-Recyclable**, and detect anomalies (trash on the ground). The system lights up different LEDs to indicate the classification.
+# Nicla Vision Waste Classification
 
-## 📌 Features
-- Machine learning-based waste classification
-- Uses **Nicla Vision** for real-time inference
-- LEDs indicate classification results:
-  - 🟢 **Green**: Recyclable
-  - 🔴 **Red**: Non-recyclable
-  - 🟡 **Yellow**: Anomaly (Trash on the ground)
+An embedded image-classification project using Arduino Nicla Vision and Edge Impulse. This repository contains the exported Arduino inference library, model assets and device examples.
 
-## 📂 Installation
-1. Clone the repository or simply download it as a zip folder 
-   ```bash
-   git clone https://github.com/Hashim11Mub/nicla-waste-classification.git
+## Explore the implementation
 
+- Camera example: `examples/nicla_vision/nicla_vision_camera/nicla_vision_camera.ino`
+- Inference library: `src/`
+- Library metadata: `library.properties`
 
-Install the Edge Impulse Library
+The export includes examples for several development boards. The Nicla Vision camera example is the relevant starting point for this project.
 
-	1.	Inside the cloned folder,  the nicla-waste-classification-main.zip folder.
-	2.	Open Arduino IDE and navigate to:
-	•	Sketch ➝ Include Library ➝ Add .ZIP Library…
-	3.	Select the zipped nicla-waste-classification-main folder and import it.
+## Run on a board
 
-Run the Example Code
+1. Download this repository as a ZIP.
+2. In Arduino IDE, use **Sketch → Include Library → Add .ZIP Library** to import the library.
+3. Select Arduino Nicla Vision and the connected board port.
+4. Open the Nicla Vision camera example and upload it.
+5. Inspect the serial output for inference results.
 
-	1.	In Arduino IDE, go to:
-	•	File ➝ Examples ➝ nicla-waste-classification-main ➝ nicla_vision_camera.ino
-	2.	Open the file and upload it to the Nicla Vision board.
-	3.	The model will be uploaded and start running inference.
+A physical board and its compatible Arduino board package are required. Classification quality depends on camera conditions and the model's training data; this repository does not provide a validated real-world accuracy benchmark.
+
+[More projects](https://hashem-m-almubarak-portfolio.vercel.app/) · [LinkedIn](https://www.linkedin.com/in/hashem-almubarak/)
